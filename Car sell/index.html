@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Car Sell Website</title>
+  <link  rel="icon" href="/image/fevicon.png">
+</head>
+<body>
+  <header>
+    <h1>Car Sell Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/login.html" onclick="login()">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to the Car Sell Website</h1>
+    
+    </section>
+
+    <section id="cars">
+      <h2>Available Cars</h2>
+      <div class="car-list">
+        <div class="car">
+          <img src="/image/audi.png" alt="Car 1">
+          <h3>Audi(red)</h3>
+          <p>Price: $50,000</p>
+          <button onclick="buyCar()">Buy Now</button>
+        </div>
+        <div class="car">
+          <img src="/image/lamborghini.png" alt="Car 2">
+          <h3>Lamborghini</h3>
+          <p>Price: $85,000</p>
+          <button onclick="buyCar()">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    <section id="cars">
+       
+        <div class="car-list">
+          <div class="car">
+            <img src="/image/bmw.jpg" alt="Car 3">
+            <h3>BMW</h3>
+            <p>Price: $56,000</p>
+            <button onclick="buyCar()">Buy Now</button>
+          </div>
+          <div class="car">
+            <img src="/image/mercedes.jpg" alt="Car 4">
+            <h3>Mercedes</h3>
+            <p>Price: $85,000</p>
+            <button onclick="buyCar()">Buy Now</button>
+          </div>
+        </div>
+      </section>
+      <section id="cars">
+        
+        <div class="car-list">
+          <div class="car">
+            <img src="/image/aston.jpg" alt="Car 5">
+            <h3>Aston martin</h3>
+            <p>Price: $55,000</p>
+            <button onclick="buyCar()">Buy Now</button>
+          </div>
+          <div class="car">
+            <img src="/image/rools.jpg" alt="Car 6">
+            <h3>RR</h3>
+            <p>Price: $110,000</p>
+            <button onclick="buyCar()">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="submitContactForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2022 Car Sell Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
